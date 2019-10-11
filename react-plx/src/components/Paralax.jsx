@@ -90,7 +90,8 @@ const exampleParallaxData = [
   ];
 
 let style = {
-    left: 50,
+    left: "50%",
+    marginLeft: -50,
     top: 100,
     width: 300,
     backgroundColor: "#34ba9c",
@@ -100,34 +101,18 @@ let style = {
     textAlign: "center",
     position: "fixed",
 }
-
-const styles = {
-    width: 200,
-    height: 100,
-    lineHeight: "100px",
-    textAlign: "center",
-    borderRadius: 20,
-    backgroundColor: "#34ba9c",
-    color: "#fff",
-    left: "50%",
-    marginLeft: -50,
-    top: 100,
-    position: "fixed",
-    fontFamily: "Helvetica, Arial, sans-serif"
-  };
   
-
 export default class Example extends Component {
   render() {
     return (
         <div style={{ height: 3000 }}>
-    <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData }
-        style = {styles}
-      >
-          test
-      </Plx>
+            <Plx
+                className='MyAwesomeParallax'
+                parallaxData={ parallaxData }
+                style = {style}
+            >
+            <img alt="" src="https://community.adobe.com/legacyfs/online/avatars/a754554_Capture.png"/>
+            </Plx>
         </div>
   
     );
